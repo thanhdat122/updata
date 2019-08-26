@@ -38,7 +38,7 @@
                         {
                             $sql = "INSERT INTO product(proname, price, descrip) VALUES ('$name','$price','$descrip')";
                             pg_query($conn,$sql);
-                            echo  "Sign Up successful!!";
+                            echo  "Add successful!!";
                         }
                     }
             }
@@ -50,7 +50,7 @@
             <button type="submit" value="Add" name="submit">Add</button>
         </form>
         
-        <button><a href="index.php">Back</a></button>
+        <button><a href="managing.php">Back</a></button>
     </div>
 </body>
 
