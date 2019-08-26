@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <div class="content">
-        <h1 font-style: >Add New Product </h1>
+    <div>
+        <h1>Adding Product Form</h1>
         <?php 
         require("connect.php");   
         if(isset($_POST["submit"]))
@@ -19,38 +19,48 @@
                 $name = $_POST["proname"];
                 $price = $_POST["price"];
                 $descrip = $_POST["descrip"];
-                
-               
-
                 if ($name == ""||$price == ""|| $descrip == "") 
                     {
-                        echo "Information should not be blank!!";
+                        ?>
+                        <script>
+                            alert("Product information should not be blank!!");
+                        </script>
+                        <?php
                     }
                 else
                     {
-                        $sql = "select * from product where proname ='$name'";
+                        $sql = "select * from product where proname='$name'";
                         $query = pg_query($conn, $sql);
                         if(pg_num_rows($query)>0)
                         {
-                            echo "Product is already available!!";
+                        ?> 
+                            <script>
+                                alert("The product is available!!");
+                            </script>
+                        <?php
                         }
                         else
                         {
                             $sql = "INSERT INTO product(proname, price, descrip) VALUES ('$name','$price','$descrip')";
                             pg_query($conn,$sql);
-                            echo  "Add successful!!";
+                            ?> 
+                                <script>
+                                    alert("Added successful!");
+                                    window.location.href = "/managing.php";
+                                </script>
+                            <?php
                         }
                     }
             }
-             ?>
-        <form action="add.php" method="POST" enctype="multipart/form-data">
-            <input type="text" width="300" height="100" name="proname" placeholder="Name"> <br>
-            <input type="text" width="300" height="100" name="price" placeholder="Price"> <br>
-            <input type="text" width="300" height="100" name="descrip" placeholder="Description"> <br>
+			?>
+        <form action="add.php" method="POST">
+            <input type="text" name="proname" placeholder="Name"> <br>
+            <input type="text" name="price" placeholder="Price"> <br>
+            <input type="text" name="descrip" placeholder="Description"> <br>
             <button type="submit" value="Add" name="submit">Add</button>
         </form>
         
-        <button><a href="managing.php">Back</a></button>
+        <button><a href="/managing.php">Back</a></button>
     </div>
 </body>
 
