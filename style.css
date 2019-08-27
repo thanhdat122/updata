@@ -3,8 +3,7 @@ body{
 }
 body .login{
     background-color: #09F4D0;
-    width: 100%;
-    height: 100%;
+    height: 565px;
 }
 
 .content {
@@ -21,6 +20,12 @@ h1 {
     width: 500px;
 }
 
+h6 {
+    margin-top: 30px;
+    font-family: Comic Sans MS cursive;
+    font-size: 40px;
+    margin-left: 550px;
+}
 .tit {
     font-size: 30px;
     font-weight: bold;
@@ -81,4 +86,7 @@ padding:10px;
 .login input {
 padding:5px;
 margin:5px;
+}
+.box{
+    margin-left: 550px;
 }
