@@ -11,7 +11,7 @@
 
 <body class="login">
     <div class="login">
-        <h1>Login</h1>
+        <h1>Login to admin</h1>
         <form action="managing.php" method="POST">
             <input type="text" name="aduser" placeholder="Username"> <br>
             <input type="password" name="adpass" placeholder="Password"> <br>
