@@ -9,7 +9,7 @@
     <title>Login</title>
 </head>
 
-<body>
+<body class="login">
     <div class="login">
         <h1>Login</h1>
         <form action="managing.php" method="POST">
