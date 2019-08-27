@@ -17,7 +17,8 @@ body .login{
 h1 {
     margin-top: 30px;
     font-family: Comic Sans MS cursive;
-    width: 500px;
+   
+    margin-left: 420px
 }
 
 h6 {
@@ -29,8 +30,9 @@ h6 {
 .tit {
     font-size: 30px;
     font-weight: bold;
-    font-style: oblique;
+    
     padding: 20px;
+    font-family: Comic Sans MS cursive;
 }
 
 .content table,
