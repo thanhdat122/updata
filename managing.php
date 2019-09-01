@@ -96,6 +96,7 @@ if(isset($_POST["aduser"]) && isset($_POST["adpass"]))
     .buttonadd:hover {opacity: 1}
     a{
         text-decoration: none;
+        color: white;
     }
 </style>
 </head>
