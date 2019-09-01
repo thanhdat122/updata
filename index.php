@@ -16,8 +16,6 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-
-<body>
 <div id="login">
         <h3 class="text-center text-white pt-5">Login form</h3>
         <div class="container">
@@ -38,7 +36,6 @@
                                 <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
                                  <input type="submit" name="submit" class="btn btn-info btn-md" value="Login">
                             </div>
-                           
                         </form>
                     </div>
                 </div>
@@ -46,16 +43,4 @@
         </div>
     </div>
 </body>
-
-<body class="login">
-    <div class="login">
-        <h6>Login to admin</h6>
-        <form class="box" action="managing.php" method="POST">
-            <input type="text" name="aduser" placeholder="Username"> <br>
-            <input type="password" name="adpass" placeholder="Password"> <br>
-            <input type="submit" value="Login">
-        </form>
-    </div>
-</body>
-
 </html>
