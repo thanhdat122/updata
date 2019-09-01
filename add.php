@@ -43,7 +43,6 @@
                         {
                             $sql = "INSERT INTO product(proname, price, descrip) VALUES ('$name','$price','$descrip')";
                             pg_query($conn,$sql);
-                            
                             ?> 
                                 <script>
                                     alert("Added successful!");
@@ -53,7 +52,7 @@
                         }
                     }
             }
-			?>
+            ?>
         <form action="add.php" method="POST">
             <input type="text" name="proname" placeholder="Name"> <br>
             <input type="text" name="price" placeholder="Price"> <br>
