@@ -80,7 +80,7 @@ if(isset($_POST["aduser"]) && isset($_POST["adpass"]))
     color: white;
     }
     .buttonadd {
-      background-color: #f4511e;
+      background-color: #4caf50;
       border: none;
       color: white;
       padding: 16px 32px;
