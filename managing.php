@@ -94,6 +94,9 @@ if(isset($_POST["aduser"]) && isset($_POST["adpass"]))
       cursor: pointer;
     }   
     .buttonadd:hover {opacity: 1}
+    a{
+        text-decoration: none;
+    }
 </style>
 </head>
 
@@ -140,7 +143,7 @@ if(isset($_POST["aduser"]) && isset($_POST["adpass"]))
             }
             ?> 
         </table>
-        <button class="buttonadd"><a href="/add.php>"></a> Add More </button>
+        <button class="buttonadd"><a href="/add.php>"> Add More </a> </button>
         <br><br>
     </div>
 </body>
