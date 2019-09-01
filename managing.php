@@ -69,6 +69,7 @@ if(isset($_POST["aduser"]) && isset($_POST["adpass"]))
     }
 
     .button1 {
+    margin 0 auto;
     background-color: white; 
     color: black; 
     border: 2px solid #4CAF50;
