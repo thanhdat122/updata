@@ -121,6 +121,9 @@ if(isset($_POST["aduser"]) && isset($_POST["adpass"]))
                 </td>
 
             </tr>
+            <?php
+            }
+            ?> 
         </table>
         <button><a href="/add.php">Add More</a></button>
         <br><br>
