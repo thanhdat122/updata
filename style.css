@@ -3,7 +3,10 @@
   border-collapse: collapse;
   width: 100%;
 }
-
+h1{
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica,
+}
 #customers td, #customers th {
   border: 1px solid #ddd;
   padding: 8px;
@@ -61,8 +64,3 @@
       cursor: pointer;
     }   
 .buttonadd:hover {opacity: 1}
-h1{
-  text-align: center;
-  font-family: "Trebuchet MS", Arial, Helvetica,
-  
-}
