@@ -37,11 +37,11 @@ if(isset($_POST["aduser"]) && isset($_POST["adpass"]))
         <h1>ATN SALES MANAGEMENT APPLICATION</h1>
         <table id="customers">
             <tr>
-                <th class=>ID</th>
-                <th class=>Name</th>
-                <th class=>Price ($)</th>
-                <th class=>Description</th>
-                <th class=>Editing</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price ($)</th>
+                <th>Description</th>
+                <th>Editing</th>
             </tr>
 
             <?php
