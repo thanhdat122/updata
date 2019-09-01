@@ -79,7 +79,21 @@ if(isset($_POST["aduser"]) && isset($_POST["adpass"]))
     background-color: #4CAF50;
     color: white;
     }
-
+    .buttonadd {
+      background-color: #f4511e;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      opacity: 0.6;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+    }   
+    .buttonadd:hover {opacity: 1}
 </style>
 </head>
 
@@ -126,7 +140,7 @@ if(isset($_POST["aduser"]) && isset($_POST["adpass"]))
             }
             ?> 
         </table>
-        <button><a href="/add.php">Add More</a></button>
+        <button class="buttonadd"><a href="/add.php">Add More</a></button>
         <br><br>
     </div>
 </body>
