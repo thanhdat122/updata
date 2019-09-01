@@ -35,13 +35,13 @@ if(isset($_POST["aduser"]) && isset($_POST["adpass"]))
 <body>
     <div>
         <h1>ATN SALES MANAGEMENT APPLICATION</h1>
-        <table>
+        <table id="customers">
             <tr>
-                <th class="tit">ID</th>
-                <th class="tit">Name</th>
-                <th class="tit">Price ($)</th>
-                <th class="tit">Description</th>
-                <th class="tit">Editing</th>
+                <th class=>ID</th>
+                <th class=>Name</th>
+                <th class=>Price ($)</th>
+                <th class=>Description</th>
+                <th class=>Editing</th>
             </tr>
 
             <?php
@@ -50,26 +50,27 @@ if(isset($_POST["aduser"]) && isset($_POST["adpass"]))
             $stmt = $pdo->prepare($sql);
             foreach ($pdo->query($sql) as $row) {
             ?>
-                <tr>
-                    <td class="info"><?php echo $row['productid']?></td> 
-                    <td class="info"><?php echo $row['proname']?></td> 
-                    <td class="info"><?php echo $row['price']?></td> 
-                    <td class="info"><?php echo $row['descrip']?></td> 
-                    <td class="info">
-                        <form action='/delete.php' method="POST">
-                            <input type='hidden' name='productid' value='<?php echo $row['productid']?>'>
-                            <input class="edit-btn" type='submit' value='Delete'>
-                        </form> <br>
+            <tr>
+                <td><?php echo $row['productid']?></td> 
+                <td><?php echo $row['proname']?></td> 
+                <td><?php echo $row['price']?></td> 
+                <td><?php echo $row['descrip']?></td> 
 
-                        <form action="/update.php" method="POST">
-                            <input type='hidden' name='productid' value='<?php echo $row['productid']?>'>
-                            <input type='hidden' name='name' value='<?php echo $row['proname']?>'>
-                            <input type='hidden' name='price' value='<?php echo $row['price']?>'>
-                            <input type='hidden' name='descrip' value='<?php echo $row['descrip']?>'>
-                            <input class="edit-btn" type='submit' value='Update'>
-                        </form>
-                    </td>
-                </tr>
+                <td>
+                <form action='/delete.php' method="POST">
+                <input type='hidden' name='productid' value='<?php echo $row['productid']?>'>
+                <input class="edit-btn" type='submit' value='Delete'>
+                </form> <br>
+                <form action="/update.php" method="POST">
+                <input type='hidden' name='productid' value='<?php echo $row['productid']?>'>
+                <input type='hidden' name='name' value='<?php echo $row['proname']?>'>
+                <input type='hidden' name='price' value='<?php echo $row['price']?>'>
+                <input type='hidden' name='descrip' value='<?php echo $row['descrip']?>'>
+                <input class="edit-btn" type='submit' value='Update'>
+                </form>
+                </td>
+
+            </tr>
             <?php
             }
             ?> 
