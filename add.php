@@ -72,10 +72,11 @@
         <div class="form-group">
         <label for="pwd">Description:</label><br>
         <input type="text" name="descrip" placeholder="Description"><br>
-        <button type="submit" value="Add" name="submit">Add</button>
+        <button style="margin-top: 30px;" type="submit" value="Add" name="submit">Add</button>
         </div>
         </form>
         <button><a href="/managing.php">Back</a></button>
+
         </div>
     </div>
 </body>
