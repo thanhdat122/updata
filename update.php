@@ -87,7 +87,7 @@ if (isset($_POST['update'])) {
 			</div>
 
 		</form>
-                <button style="margin-left: 100px;"><a href="/managing.php">Back</a></button>
+                <button ><a href="/managing.php">Back</a></button>
 		<br><br>
     </div>
 </body>
