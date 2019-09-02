@@ -48,7 +48,11 @@ if (isset($_POST['update'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
     <title>Update</title>
 </head>
 
@@ -61,14 +65,29 @@ if (isset($_POST['update'])) {
 			$result = pg_query($conn, $qry);
 			$row = pg_fetch_row($result);
 			?>
-			<input type="hidden" name="productid" value="<?= $row[0] ?>">
-			<input type="text" name="proname" value="<?= $row[1] ?>">
-			<input type="text" name="price" value="<?= $row[2] ?>">
-			<input type="text" name="descrip" value="<?= $row[3] ?>">
-			<input type="submit" name="update" value="Update">
+			
+			<div class="container">
+		  	<h2>Form control: input</h2>
+		  	<p>The form below contains two input elements; one of type text and one of type password:</p>
+		  	
+		  	<input type="hidden" name="productid" value="<?= $row[0] ?>">
+		    <div class="form-group">
+		      <label for="usr">Name:</label>
+		      <input type="text" name="proname" value="<?= $row[1] ?>">
+		    </div>
+		    <div class="form-group">
+		      <label for="pwd">Price:</label>
+		      <input type="text" name="price" value="<?= $row[2] ?>">
+		    </div>
+		    <div class="form-group">
+		      <label for="pwd">Description:</label>
+		      <input type="text" name="descrip" value="<?= $row[3] ?>">
+		    </div>
+		  	<input type="submit" name="update" value="Update">
+			</div>
+
 		</form>
-        
-        <button><a href="/managing.php">Back</a></button>
+                <button><a href="/managing.php">Back</a></button>
 		<br><br>
     </div>
 </body>
