@@ -15,7 +15,7 @@
 
 <body>
     <div>
-        <h1>Adding Product Form</h1>
+        
         <?php 
         require("connect.php");   
         if(isset($_POST["submit"]))
@@ -57,21 +57,21 @@
                     }
             }
             ?>
-       <div class="container">
-        <h2>Form control: input</h2>
-        <p>The form below contains two input elements; one of type text and one of type password:</p>
+       <div style="margin-left: 300px;" class="container">
+        <h2>Adding Product Form</h2>
+        <p>Fill out the product information here:</p>
         <form>
         <div class="form-group">
         <label for="usr">Name:</label>
         <input type="text" name="proname" placeholder="Name"> 
         </div>
         <div class="form-group">
-        <label for="pwd">Price</label>
-        <input type="text" name="price" placeholder="Price"> <br>
+        <label for="pwd">Price:</label>
+        <input type="text" name="price" placeholder="Price"> 
         </div>
         <div class="form-group">
-        <label for="pwd">Description</label>
-        <input type="text" name="descrip" placeholder="Description"> <br>
+        <label for="pwd">Description:</label>
+        <input type="text" name="descrip" placeholder="Description"> 
         <button type="submit" value="Add" name="submit">Add</button>
         </div>
         </form>
