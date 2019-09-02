@@ -57,7 +57,7 @@ if (isset($_POST['update'])) {
 </head>
 
 <body>
-    <div>
+    <div style="margin-left: 570px;">
         
         <form action="/update.php" method="POST">
 			<?php
