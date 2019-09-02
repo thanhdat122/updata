@@ -58,7 +58,7 @@ if (isset($_POST['update'])) {
 
 <body>
     <div>
-        <h1>Update Information</h1>
+        
         <form action="/update.php" method="POST">
 			<?php
 			$qry = "SELECT * FROM product WHERE productid = '$id'";
@@ -67,27 +67,27 @@ if (isset($_POST['update'])) {
 			?>
 			
 			<div class="container">
-		  	<h2>Form control: input</h2>
-		  	<p>The form below contains two input elements; one of type text and one of type password:</p>
+		  	<h2>Update Information</h2>
+		  	<p>Fill out the product information here:</p>
 		  	
 		  	<input type="hidden" name="productid" value="<?= $row[0] ?>">
 		    <div class="form-group">
-		      <label for="usr">Name:</label>
+		      <label for="usr">Name:</label><br>
 		      <input type="text" name="proname" value="<?= $row[1] ?>">
 		    </div>
 		    <div class="form-group">
-		      <label for="pwd">Price:</label>
+		      <label for="pwd">Price:</label><br>
 		      <input type="text" name="price" value="<?= $row[2] ?>">
 		    </div>
 		    <div class="form-group">
-		      <label for="pwd">Description:</label>
+		      <label for="pwd">Description:</label><br>
 		      <input type="text" name="descrip" value="<?= $row[3] ?>">
 		    </div>
 		  	<input type="submit" name="update" value="Update">
 			</div>
 
 		</form>
-                <button><a href="/managing.php">Back</a></button>
+                <button style="margin-left: 200px;"><a href="/managing.php">Back</a></button>
 		<br><br>
     </div>
 </body>
