@@ -33,7 +33,7 @@
                                 <input type="password" name="password" id="password" class="form-control">
                             </div>
                             <div class="form-group">
-                                <input type="submit" name="Submit" class="btn btn-info btn-md" value="submit">
+                                <input type="submit" name="Submit" class="btn btn-info btn-md" value="Login">
                             </div>
                         </form>
                     </div>
