@@ -57,7 +57,7 @@
                     }
             }
             ?>
-       <div style="margin-left: 300px;" class="container borderadd" >
+       <div style="margin-left: 600px;" class="container borderadd" >
         <h2>Adding Product Form</h2>
         <p>Fill out the product information here:</p>
         <form>
