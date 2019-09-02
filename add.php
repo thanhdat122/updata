@@ -62,16 +62,16 @@
         <p>Fill out the product information here:</p>
         <form>
         <div class="form-group">
-        <label for="usr">Name:</label>
+        <label for="usr">Name:</label><br>
         <input type="text" name="proname" placeholder="Name"> 
         </div>
         <div class="form-group">
-        <label for="pwd">Price:</label>
+        <label for="pwd">Price:</label><br>
         <input type="text" name="price" placeholder="Price"> 
         </div>
         <div class="form-group">
-        <label for="pwd">Description:</label>
-        <input type="text" name="descrip" placeholder="Description"> 
+        <label for="pwd">Description:</label><br>
+        <input type="text" name="descrip" placeholder="Description"><br>
         <button type="submit" value="Add" name="submit">Add</button>
         </div>
         </form>
